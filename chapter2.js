@@ -36,5 +36,36 @@
 // console.log(x3);
 // console.log(other);
 
+// 比較演算子
+// var data1 = ['javascript', 'ajax', 'asp.net'];
+// var data2 = ['javascript', 'ajax', 'asp.net'];
+// console.log(data1 == data2);　true
+// console.log('3.14E2' == 314); true
+// console.log('0x10' == 16);    true
+// console.log('1' == 1)         true
+// console.log('3.14E2' === 314); false
+// console.log('0x10' === 16);    false
+// console.log('1' === 1);         false
+// 基本的には === を推奨　　!=と!==も同じ
+
+// 条件演算子
+// var x = 60;
+// console.log((x >= 70) ? '合格' : '不合格');
+
+// 論理演算子
+// var x = 1;
+// var y = 2;
+// console.log(x === 1 && y ===1);
+// console.log(x === 1 || y ===1);
+// if (x === 1) { console.log('こんにちは');}
+// x === 1 && console.log('こんにちは');
+// ショートカット演算子の使いどころ
+// var msg = '';
+// msg = msg || 'こんに血は';
+// console.log(msg)
+// msgがfalsyな値(空もじ)のため||で'こんに血は'が代入されることになった
+
+
+
 
 
