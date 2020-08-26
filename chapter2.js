@@ -65,6 +65,78 @@
 // console.log(msg)
 // msgがfalsyな値(空もじ)のため||で'こんに血は'が代入されることになった
 
+// 制御構文
+// if文
+// var x = 15;
+// if (x > 10) {
+//   console.log('変数は10以上');
+// } else {
+//   console.log('変数は10より小さい');
+// }
+// if (x > 10) {
+//   console.log('変数は10以上');
+// }
+// var y = 30;
+// if (y > 20) {
+//   console.log('20より大きい');
+// } else if (y > 10) {
+//   console.log('10より大きい');
+// } else {
+//   console.log('10未満');
+// }
+// var x = 12;
+// if (x >= 10) {
+//   if (x >= 20) {
+//     console.log('20以上');
+//   } else {
+//     console.log('10以上20未満');
+//   }
+// } else {
+//   console.log("10未満");
+// }
+
+// switch命令
+// var rank = 'B';
+// switch(rank) {
+//   case 'A' :
+//     console.log('Aランク');
+//     break;
+//   case 'B' :
+//     console.log('Bランク');
+//     break;
+//   default :
+//     console.log('ランク外');
+//     break;
+// }
+// 末尾にbreakがないとswitchブロックが終了しない　→　次のブロックが実行される
+
+// while/do...while命令文
+// var x = 10;
+// while (x < 10) {
+//   console.log('xの値は' + x);
+//   x++;
+// }
+// var y = 10;
+// do {
+//   console.log('yの値は' + y);
+//   y++;
+// } while(y < 10)
+
+
+// for命令
+// for (var x = 8; x < 10; x++) {
+//   console.log('xの値は' + x);
+// }
+
+var data = { apple:150, orange:100, banana:120 };
+for (var key in data) {
+  console.log(key + '=' + data[key]);
+}
+
+
+
+
+
 
 
 
