@@ -128,11 +128,34 @@
 //   console.log('xの値は' + x);
 // }
 
-var data = { apple:150, orange:100, banana:120 };
-for (var key in data) {
-  console.log(key + '=' + data[key]);
-}
-
+// for...in命令(連想配列)
+// var data = { apple:150, orange:100, banana:120 };
+// for (var key in data) {
+//   console.log(key + '=' + data[key]);
+// }
+// for...in命令(配列)
+// var data = ['apple', 'orange', 'banana'];
+// for (var key in data) {
+//   console.log(data[key]);
+// }
+// for...in命令(配列)での不具合例
+// var data = ['apple', 'orange', 'banana'];
+// Array.prototype.hoge = function() {};
+// for (var key in data) {
+//   console.log(data[key]);
+// }
+// →apple,orange,banana,ƒ () {}
+// for..of命令
+// var data = ['apple', 'orange', 'banana'];
+// Array.prototype.hoge = function() {}
+// for (var i = 0, len = data.length; i < len; i++) {
+//   console.log(data[i]);
+// }
+// var data = ['apple', 'orange', 'banana'];
+// Array.prototype.hoge = function() {}
+// for (var value of data) {
+//   console.log(value);
+// }
 
 
 
