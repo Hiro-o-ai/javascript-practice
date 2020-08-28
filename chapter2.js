@@ -171,6 +171,41 @@
 // }
 // console.log('合計:' + result );
 
+// ラベル構文
+// 30以下の九九の表を出力
+// for (var i = 1; i < 10; i++) {
+//   for (var j = 1; j < 10; j++) {
+//     var k = i * j
+//     if (k > 30) { break; }
+//     document.write(k + '&nbsp');
+//   }
+//   document.write('<br />');
+// }
+// 30を超えたら九九をやめる
+// ラベル名 : 識別子をつけることができる
+// break ラベル名でラベルのついたループを脱出
+// kuku :
+// for (var i = 1; i < 10; i++) {
+//   for (var j = 1; j < 10; j++) {
+//     var k = i * j
+//     if (k > 30) { break kuku; }
+//     document.write(k + '&nbsp');
+//   }
+//   document.write('<br />');
+// }
+// try...catch...finaly命令
+var i = 1;
+try{
+  i = i * j;
+} catch(e) {
+  console.log(e.message);
+} finally {
+  console.log('処理は完了しました。');
+}
+j is not defined
+処理は完了しました。
+
+
 
 
 
