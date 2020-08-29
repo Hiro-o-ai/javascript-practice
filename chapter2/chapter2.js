@@ -194,18 +194,26 @@
 //   document.write('<br />');
 // }
 // try...catch...finaly命令
-var i = 1;
-try{
-  i = i * j;
-} catch(e) {
-  console.log(e.message);
-} finally {
-  console.log('処理は完了しました。');
-}
-j is not defined
-処理は完了しました。
+// var i = 1;
+// try{
+//   i = i * j;
+// } catch(e) {　eはエラーオブジェクト
+//   console.log(e.message);　messageはプロパテ
+// } finally {
+//   console.log('処理は完了しました。');　例外の有無に関わらず実行される
+// }
+// throw命令　自分で例外を発生させる
+// var x = 1;
+// var y = 0;
+// try{
+//   if (y === 0) {throw new Error('0で除算しようとしました。');}
+//   var z = x / y;
+// } catch(e) {
+//   console.log(e.message);
+// }
 
-
+// strictモードの有効化
+// 'use strict'; or function hoge() { 'use strict'; }
 
 
 
