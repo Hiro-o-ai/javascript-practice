@@ -411,11 +411,17 @@
 // var diff = (dat2.getTime() - dat1.getTime()) / (1000 * 60 * 60 * 24);
 // console.log(diff + '日の差があります');
 
+// 正規表現とRegExp
+// var p = new RegExp('http(s)?://([\\w-]+\\.)+[\\w-]+(/[\\w- ./?%&=]*)?','gi');
+// var p = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/gi;
 
+// 正規表現とsplit
+// var p = /[\/\.\-]/gi;
+// console.log('2016/12/04'.split(p));
+// console.log('2016-12-04'.split(p));
+// console.log('2016.12.04'.split(p));
 
-
-
-
+// objectオブジェクト
 
 
 
