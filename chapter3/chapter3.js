@@ -242,17 +242,84 @@
 // })); [5, 10, 25]
 
 // sortメソッド（文字）
-var classes = ['部長', '課長', '主任', '担当']
-var members = [
-  { name: '鈴木清子', clazz: '主任'},
-  { name: '山口久雄', clazz: '部長'},
-  { name: '井上太郎', clazz: '担当'},
-  { name: '和田朋美', clazz: '課長'},
-  { name: '小森裕太', clazz: '担当'},
-];
-console.log(members.sort(function(x, y) {
-  return classes.indexOf(x.clazz) - classes.indexOf(y.clazz);
-}));
+// var classes = ['部長', '課長', '主任', '担当']
+// var members = [
+//   { name: '鈴木清子', clazz: '主任'},
+//   { name: '山口久雄', clazz: '部長'},
+//   { name: '井上太郎', clazz: '担当'},
+//   { name: '和田朋美', clazz: '課長'},
+//   { name: '小森裕太', clazz: '担当'},
+// ];
+// console.log(members.sort(function(x, y) {
+//   return classes.indexOf(x.clazz) - classes.indexOf(y.clazz);
+// }));
+
+// Mapオブジェクト
+// let m = new Map();
+// m.set('dog', 'ワンワン');
+// m.set('cat', 'ニャー');
+// m.set('mouse', 'チュー');
+
+// console.log(m.size);
+// console.log(m.get('dog'));
+// console.log(m.has('cat'));
+// キーを順に取得
+// for (let key of m.keys()) {
+//   console.log(key);
+// }
+// 値をん順に取得
+// for (let value of m.values()) {
+//   console.log(value);
+// }
+// キーと値を順に取得
+// for (let [key, value] of m) {  let [key, value] of m.entries()も同じ
+//   console.log(value);
+// }
+// 削除
+// m.delete('dog');
+// console.log(m.size)
+// 全て削除
+// m.clear();
+// console.log(m.size);
+
+// map キーの比較
+// var m = new Map();
+// m.set('1', 'hoge');
+// console.log(m.get(1)); undefined
+
+// mapとNaN
+// var m = new Map();
+// m.set(NaN, 'hoge');
+// console.log(m.get(NaN));
+// NaNの一致ができる
+
+// mapと空オブジェクトリテラル
+// var m = new Map();
+// m.set({}, 'hoge');
+// console.log(m.get({})); undefined
+// {}で認識させるには
+// var key = {};
+// var m = new Map();
+// m.set(key, 'hoge');
+// console.log(m.get(key));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
