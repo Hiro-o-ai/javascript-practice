@@ -422,17 +422,77 @@
 // console.log('2016.12.04'.split(p));
 
 // objectオブジェクト
+// toString/valueOf
+// var obj = new Object();
+// console.log(obj.toString());
+// console.log(obj.valueOf());
 
+// var dat = new Date();
+// console.log(dat.toString());
+// console.log(dat.valueOf());
 
+// var ary = ['prototype.js', 'jQuery', 'yahoo'];
+// console.log(ary.toString());
+// console.log(ary.valueOf());
 
+// var num = 10;
+// console.log(num.toString());
+// console.log(num.valueOf());
 
+// var reg = /[0-9]{3}-[0-9]{4}/g;
+// console.log(reg.toString());
+// console.log(reg.valueOf());
 
+// 結合メソッド assign
+// let pet = {
+//   type: 'スノーホワイトハムスター',
+//   name: 'キラ',
+//   description: {
+//     birth: '2014-02-15'
+//   }
+// };
+// let pet2 = {
+//   name:'山田きら',
+//   color:'白',
+//   description: {
+//     food: 'ひまわりの種'
+//   }
+// };
 
+// let pet3 = {
+//   weight: 42,
+//   photo: 'http//www.wings.msn.to/img/ham.jpg'
+// };
 
+// Object.assign(pet, pet2, pet3);
+// console.log(pet);
 
+// オブジェクトを生成 createメソッド
+// var obj = { x:1, y:2, z:3};
+// var obj2 = new Object();
+// obj2.x = 1;
+// obj2.y = 2;
+// obj2.z = 3;
 
+// var obj3 = Object.create(Object.prototype, {
+//   x: { value: 1, writable: true, configurable: true, enumerable: true},
+//   y: { value: 2, writable: true, configurable: true, enumerable: true},
+//   z: { value: 3, writable: true, configurable: true, enumerable: true}
+// });
+// console.log(obj)
+// console.log(obj2)
+// console.log(obj3)
 
+// 不変オブジェクト
+// 'use strict';
+// var pet = {type: 'スノーホワイトハムスター', name: 'キラ' };
+// // Object.preventExtensions(pet);　下に行くほど処理ができなくなる
+// // Object.seal(pet);
+// Object.freeze(pet);
 
+// pet.name = '山田きら';
+// delete pet.type;
+// pet.weight = 42;
 
 
 
