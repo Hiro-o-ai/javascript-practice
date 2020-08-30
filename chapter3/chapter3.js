@@ -132,7 +132,127 @@
 // console.log(Math.exp(3));
 // console.log(Math.expm1(1));
 
+// Arrayオブジェクト
+// var ary = new Array('佐藤', '高江', '永田');
+// console.log(ary)
+// var ary = new Array();
+// console.log(ary)
+// var ary = new Array(10);
+// console.log(ary)
 
+// Arrayオブジェクトのメンバ
+// var ary1 = ['sato', 'takae', 'osada', 'hio', 'saitoh', 'sato']
+// var ary2 = ['yabuki', 'aoki', 'moriyama', 'yamada']
+
+// console.log(ary1.length);
+// console.log(Array.isArray(ary1));
+// console.log(ary1.toString());
+// console.log(ary1.indexOf('sato'));
+// console.log(ary1.lastIndexOf('sato'));
+// console.log(ary1.concat(ary2));
+
+// console.log(ary1.join('/'));
+// console.log(ary1.slice(1));
+// console.log(ary1.slice(1,2));
+// console.log(ary1.splice(1, 2, 'kakeya', 'yamaguchi'));
+// console.log(ary1);
+// console.log(Array.of(20, 40, 60));
+// console.log(ary1.copyWithin(1, 3, 5));
+// console.log(ary1);
+// console.log(ary2.fill('suzuki', 1, 3));
+// console.log(ary2);
+// console.log(ary1.pop());
+// console.log(ary1);
+// console.log(ary1.push('kondo'));
+// console.log(ary1);
+// console.log(ary1.shift());
+// console.log(ary1);
+// console.log(ary1.unshift('ozawa', 'kuge'));
+// console.log(ary1);
+// console.log(ary1.reverse());
+// console.log(ary1);
+// console.log(ary1.sort());
+// console.log(ary1);
+
+// arrayスタック
+// var data = [];
+// data.push(1);
+// data.push(2);
+// data.push(3);
+// console.log(data.pop());  3
+// console.log(data.pop());  2
+// console.log(data.pop());  1
+
+// arrayキュー
+// var data = [];
+// data.push(1);
+// data.push(2);
+// data.push(3);
+// console.log(data.shift());  1
+// console.log(data.shift());  2
+// console.log(data.shift());  3
+
+// spliceメソッド
+// var data = ['sato', 'takae', 'osada', 'hio', 'saitoh']
+// console.log(data.splice(3, 2, 'yamada', 'suzuki')); 要素の入れ替え
+// console.log(data);
+// console.log(data.splice(3, 2));　　要素の削除
+// console.log(data);
+// console.log(data.splice(1, 0, 'tanaka'));　指定されたインデックスに要素を挿入
+// console.log(data);
+
+// コールバック系メソッド
+// forEachメソッド
+// var data = [2, 3, 4, 5];
+// data.forEach(function(value, index, array) {
+//   console.log(value * value);
+// });  4, 9, 16, 25
+
+// mapメソッド
+// var data = [2, 3, 4, 5]
+// var result = data.map(function(value, index, array) {
+//   return value * value;
+// });
+// console.log(result);[4, 9, 16, 25]
+
+// someメソッド
+// var data = [2, 3, 4, 5];
+// var result = data.some(function(value, index, array) {
+//   return value % 3 === 0; 指定した条件に一致する値のみ配列に入れる
+// });　everyメソッドとの違いは一部の条件に一致すれば戻す
+
+// if (result) {
+//   console.log('3の倍数が見つかりました。');
+// } else {
+//   console.log('3の倍数が見つかりま泉でした。');
+// }
+
+// filterメソッド
+// var data = [4, 9, 16, 25];
+// var result =  data.filter(function(value, index, array) {
+//   return value % 2 ===1;
+// });
+// console.log(result); [9,25]
+
+// sortメソッド（数値）
+// var ary = [5, 25, 10];
+// console.log(ary.sort()); [10, 25, 5]
+// console.log(ary.sort(function(x, y) {
+//   return x - y;
+// })); [5, 10, 25]
+
+// sortメソッド（文字）
+var classes = ['部長', '課長', '主任', '担当']
+var members = [
+  { name: '鈴木清子', clazz: '主任'},
+  { name: '山口久雄', clazz: '部長'},
+  { name: '井上太郎', clazz: '担当'},
+  { name: '和田朋美', clazz: '課長'},
+  { name: '小森裕太', clazz: '担当'},
+];
+console.log(members.sort(function(x, y) {
+  return classes.indexOf(x.clazz) - classes.indexOf(y.clazz);
+}));
 
 
 
