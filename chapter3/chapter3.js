@@ -494,6 +494,48 @@
 // delete pet.type;
 // pet.weight = 42;
 
+// Globalオブジェクト
+// GlobalオブジェクトからNumberオブジェクトに移動したメソッド
+// console.log(isNaN('hoge')); true
+// console.log(Number.isNaN('hoge')); false
+
+// クエリ情報のエスケープ
+// var str = '!"#$%&()+-*/@~_|;:,.';
+// console.log(encodeURI(str));
+// console.log(encodeURIComponent(str));
+
+// 動的に生成したスクリプトを実行
+// var str = 'console.log("eval関数")';
+// eval(str);  eval関数
+
+// eval関数の代替案
+// var obj = { hoge: 1, foo: 2 };
+// var prop = 'hoge';
+// eval('console.log(obj.'+ prop + ')');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
