@@ -303,6 +303,51 @@
 // m.set(key, 'hoge');
 // console.log(m.get(key));
 
+// setオブジェクト
+// 重複しない値の集合を管理するためのオブジェクト
+// let s = new Set();
+// s.add(10);
+// s.add(100);
+// s.add(5);
+// s.add(50);
+// s.add(5);
+// 上のaddと　let s = new Set([10,100,5,50,5])　は同じ
+// console.log(s.has(100));
+// console.log(s.size);
+// 値を順に取得
+// for (let val of s.values()) {
+//   console.log(val);
+// }
+// 値を順に取得（上と同じ）
+// for (let val of s) {
+//   console.log(val);
+// }
+
+// s.delete(100);
+// console.log(s.size);
+// s.clear();
+// console.log(s.size);
+
+// NaN比較
+// let s = new Set();
+// s.add(NaN);
+// s.add(NaN);
+// console.log(s.size); 1
+// s.add({});
+// s.add({});
+// console.log(s.size); 3
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
