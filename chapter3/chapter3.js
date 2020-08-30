@@ -390,12 +390,26 @@
 // console.log(Date.UTC(2016, 11, 5));
 // console.log(Date.now());
 
+// 日付の加算原産
+// var dat = new Date(2017, 4, 15, 11, 40);
+// console.log(dat.toLocaleString());
+// dat.setMonth(dat.getMonth() + 3);
+// console.log(dat.toLocaleString());
+// dat.setDate(dat.getDate() - 20);
+// console.log(dat.toLocaleString());
 
+// var dat = new Date(2017, 4, 15, 11, 40);
+// console.log(dat.toLocaleString());
+// 来月の0日目をセット　　　5/31
+// dat.setMonth(dat.getMonth() + 1);
+// dat.setDate(0);
+// console.log(dat.toLocaleString());
 
-
-
-
-
+// 日付の差分
+// var dat1 = new Date(2017,4,15);
+// var dat2 = new Date(2017,5,20);
+// var diff = (dat2.getTime() - dat1.getTime()) / (1000 * 60 * 60 * 24);
+// console.log(diff + '日の差があります');
 
 
 
