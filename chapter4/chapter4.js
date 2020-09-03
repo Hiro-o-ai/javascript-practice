@@ -244,6 +244,82 @@
 
 // show(member)  山田たろう
 
+// 関数の呼び出し
+// 戻り値を別の変数に代入
+// function getMaxMin(...nums) {
+//   return [Math.max(...nums), Math.min(...nums)]
+// }
+// let result = getMaxMin(10,35,-5, 0,78);
+// console.log(result);
+// let [max, min] = getMaxMin(10,35,-5, 0,78);
+// console.log(max)
+// console.log(min)
+
+// 再帰関数
+// function factorial(n) {
+//   if ( n != 0 ) { return n * factorial(n - 1); }
+//   return 1;
+// }
+// console.log(factorial(5));
+
+function arrayWalk(data, f) {
+  for (var key in data) {
+    f(data[key], key);
+  }
+}
+
+function showElement(value, key) {
+  console.log(key + ':' + value);
+}
+
+var ary = [1,2,4,8,16];
+arrayWalk(ary, showElement);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
